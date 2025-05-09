@@ -9,6 +9,7 @@ from resources.summary_resource import HourlySalesSummaryResource
 from resources.auth_resource import RegisterResource, LoginResource
 from tasks.scheduler import start_scheduler
 from flask_jwt_extended import JWTManager
+from utils import roles_required
 from models.sale_item import SaleItem # Import the new model
 
 api = Api(flask_app)
