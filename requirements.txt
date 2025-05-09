@@ -1,0 +1,8 @@
+Flask
+Flask-SQLAlchemy
+Flask-RESTful
+marshmallow
+python-dotenv
+Flask-JWT-Extended
+APScheduler
+werkzeug
