@@ -6,12 +6,10 @@ This is a simple REST API for managing products, sales, and stores.
 
 The following assumptions were made during the design and implementation:
 
-* The provided MySQL database schema is used.
 * The API follows basic RESTful principles.
 * Data is exchanged in JSON format.
 * JWT is used for stateless authentication.
 * Hourly sales summaries are generated at the top of each hour for the previous hour.
-* The implementation prioritizes meeting core requirements with simplicity.
 * User roles (cashier, sales manager, head office manager) are included in the JWT, but detailed role-based authorization on endpoints is not fully implemented beyond requiring authentication.
 * Input data validation is primarily done using Marshmallow schemas.
 
