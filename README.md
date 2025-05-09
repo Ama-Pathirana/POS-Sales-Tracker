@@ -19,6 +19,7 @@ This project uses a MySQL database. The database schema can be created by execut
 
 ```bash
 mysql -u <your_mysql_username> -p < dbpostracker.sql
+```
 
 ## Instructions to Run
 
