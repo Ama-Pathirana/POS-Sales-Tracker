@@ -24,6 +24,7 @@ The following assumptions were made during the design and implementation:
 4.  **Configure the database:**
     * Open the `config.py` file.
     * Modify the `DATABASE_URI` to match your MySQL database connection details (username, password, host, port, database name).
+
 5.  **Initialize the database** (if you haven't already using the MySQL script):
     Although you've already created the database using the MySQL script, Flask-SQLAlchemy will interact with it based on the models. You might not need to explicitly initialize it via Python if the schema is already set up.
 6.  **Run the application:**
@@ -31,6 +32,14 @@ The following assumptions were made during the design and implementation:
     python app.py
     ```
     The API will typically start at `http://127.0.0.1:5000/`.
+
+
+## Database Setup
+
+This project uses a MySQL database. The database schema can be created by executing the `pos_sales_tracker.sql` script against your MySQL server:
+
+```bash
+mysql -u <your_mysql_username> -p < pos_sales_tracker.sql
 
 ## API Endpoints
 
