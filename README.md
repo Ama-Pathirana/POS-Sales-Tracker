@@ -13,6 +13,13 @@ The following assumptions were made during the design and implementation:
 * User roles (cashier, sales manager, head office manager) are included in the JWT, but detailed role-based authorization on endpoints is not fully implemented beyond requiring authentication.
 * Input data validation is primarily done using Marshmallow schemas.
 
+## Database Setup
+
+This project uses a MySQL database. The database schema can be created by executing the `dbpostracker.sql` script against your MySQL server:
+
+```bash
+mysql -u <your_mysql_username> -p < dbpostracker.sql
+
 ## Instructions to Run
 
 1.  **Clone the repository** (if applicable).
@@ -33,13 +40,6 @@ The following assumptions were made during the design and implementation:
     ```
     The API will typically start at `http://127.0.0.1:5000/`.
 
-
-## Database Setup
-
-This project uses a MySQL database. The database schema can be created by executing the `pos_sales_tracker.sql` script against your MySQL server:
-
-```bash
-mysql -u <your_mysql_username> -p < pos_sales_tracker.sql
 
 ## API Endpoints
 
